@@ -5,7 +5,7 @@ var _ = require('lodash'),
 
 module.exports = function(url) {
   var results = {},
-    googleApiKey = "AIzaSyB_D8XnxibUVFJfB_0UknboCfezJkZ6MGk",
+    googleApiKey = "AIzaSyAMckIPp3p3Bkz4smXToAt47BN7TT8HP7M",
     apis = {
       // facebook
       facebook: "https://api.facebook.com/method/fql.query?query=select total_count,like_count,comment_count,share_count,click_count from link_stat where url='" + url + "'&format=json",
@@ -68,7 +68,10 @@ module.exports = function(url) {
             resolve(body);
           }  
           else {
-            reject(error);
+            console.log(response.statusCode);
+            console.log(error);
+            console.log(body);
+            reject(body);
           }
         });
     });
