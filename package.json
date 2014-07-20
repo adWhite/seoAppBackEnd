@@ -17,6 +17,6 @@
     "static-favicon": "~1.0.0",
     "cheerio": "^0.17.0",
     "cors": "^2.4.1",
-    "request-promise": "0.0.4"
+    "bluebird": "~2.2.2"
   }
 }
