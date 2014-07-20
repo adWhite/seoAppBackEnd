@@ -1,6 +1,8 @@
 {
-  "name": "bears",
+  "name": "social-api",
   "version": "0.0.1",
+  "description": "API showing SEO resources",
+  "main": "app.js",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -21,5 +23,7 @@
     "cheerio": "^0.17.0",
     "cors": "^2.4.1",
     "request-promise": "0.0.4"
-  }
+  },
+  "author": "thinkxl",
+  "licence": "MIT"
 }
