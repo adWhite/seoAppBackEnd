@@ -68,7 +68,6 @@ module.exports = function(url) {
             resolve(body);
           }  
           else {
-            console.log("Error");
             reject(error);
           }
         });

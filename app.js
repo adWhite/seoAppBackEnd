@@ -41,7 +41,7 @@ router.route('/seo')
         seo: response
       });
     }).catch(function(error) {
-      res.send("Error");
+      res.send(error);
     });
   });
 
