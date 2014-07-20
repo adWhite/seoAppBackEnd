@@ -40,8 +40,8 @@ router.route('/seo')
       res.json({ 
         seo: response
       });
-    }).catch(function(error) {
-      res.send(error);
+    }).error(function(e) {
+      res.send(e);
     });
   });
 
