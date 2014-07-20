@@ -1,0 +1,5 @@
+*~
+*.swp
+*.sh
+.DS_Store
+node_modules
