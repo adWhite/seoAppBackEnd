@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "0.10.x"
+  },
   "name": "bears",
   "version": "0.0.1",
   "private": true,
