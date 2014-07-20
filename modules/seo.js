@@ -5,6 +5,7 @@ var _ = require('lodash'),
 
 module.exports = function(url) {
   var results = {},
+    googleApiKey = "AIzaSyA0LqDDm1ayLvjITjYYKJMpvU9wGGYiVZ4",
     apis = {
       // facebook
       facebook: "https://api.facebook.com/method/fql.query?query=select total_count,like_count,comment_count,share_count,click_count from link_stat where url='" + url + "'&format=json",
@@ -21,7 +22,7 @@ module.exports = function(url) {
       pinterest: "http://api.pinterest.com/v1/urls/count.json?url=" + url,
 
       // Speed API 
-      speed: "https://www.googleapis.com/pagespeedonline/v1/runPagespeed?url=" + url + "&key=AIzaSyDdFJuY-fJdro8x-y0bmKd5_64O5UdwfxM&strategy=desktop&screenshot=true&filter_third_party_resources=true",
+      speed: "https://www.googleapis.com/pagespeedonline/v1/runPagespeed?url=" + url + "&key=" + googleApiKey + "&strategy=desktop&screenshot=true&filter_third_party_resources=true",
 
       // Scrape HTML 
       html: url 
