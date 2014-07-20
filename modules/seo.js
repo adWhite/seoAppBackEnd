@@ -5,7 +5,7 @@ var _ = require('lodash'),
 
 module.exports = function(url) {
   var results = {},
-    googleApiKey = "AIzaSyA0LqDDm1ayLvjITjYYKJMpvU9wGGYiVZ4",
+    googleApiKey = "AIzaSyB_D8XnxibUVFJfB_0UknboCfezJkZ6MGk",
     apis = {
       // facebook
       facebook: "https://api.facebook.com/method/fql.query?query=select total_count,like_count,comment_count,share_count,click_count from link_stat where url='" + url + "'&format=json",
