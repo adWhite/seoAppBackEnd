@@ -46,7 +46,7 @@ router.route('/seo')
   });
 
 // http://localhost:5000/api/social?url=http://mashable.com
-app.use('/api', router);
+app.use('/v1', router);
 
 app.listen(port);
 console.log('Magic happens on port ' + port);
