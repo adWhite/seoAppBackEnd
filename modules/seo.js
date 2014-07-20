@@ -40,8 +40,6 @@ module.exports = function(url) {
             if (isHTML) {
               var $ = cheerio.load(body),
               body = $("html").html();
-
-              console.log($("img"));
             }
 
             // if pinterest we delete all strings in the response
