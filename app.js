@@ -41,7 +41,7 @@ router.route('/seo')
         seo: response
       });
     }).catch(function(error) {
-      console.log(error);
+      res.send(500, { error: "Something blew up" });
     });
   });
 
